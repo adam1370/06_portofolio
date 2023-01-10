@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: mr-eaves-sans, sans-serif;
+}
+
+h1 {
+  font-family: cheap-pine, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 {
+  font-family: cheap-pine, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 {
+  font-family: cheap-pine, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 1px -8px 19px 3px black;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  transition: 0.2s ease;
+}
+
+/* Menu css */
+header {
+  background-color: white;
+  /* SKAL GØRES SENERE SÃ… MENUEN FØLGER MED */
+  /* position: fixed; */
+  width: 100%;
+  color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.navn {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: right;
+  font-family: presicav, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #3d3c3c;
+  font-size: 1.4rem;
+  text-shadow: 0px 4px 10px black;
+}
+
+.col {
+  display: grid;
+  margin: 190px 0px;
+  place-content: center;
+  color: black;
+  gap: 10px;
+}
+
+.headline {
+  font-size: 20rem;
+  color: black;
+  font-family: cheap-pine, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: rgb(0 0 0 / 53%) 0px 20px 24px;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1440px) {
+  .headline {
+    font-size: 20rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .headline {
+    font-size: 15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .headline {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .headline {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headline {
+    font-size: 7rem;
+  }
+}
