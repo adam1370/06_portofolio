@@ -6,21 +6,49 @@
 }
 
 h1 {
-  font-family: cheap-pine, sans-serif;
-  font-weight: bold;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 500px;
   font-style: normal;
 }
 
 h2 {
-  font-family: cheap-pine, sans-serif;
+  font-family: mr-eaves-sans, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
 h3 {
-  font-family: cheap-pine, sans-serif;
+  font-family: mr-eaves-sans, sans-serif;
   font-weight: bold;
   font-style: normal;
+}
+
+p {
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Menu css */
+header {
+  background-color: #262626;
+  /* SKAL GØRES SENERE SÃ… MENUEN FØLGER MED */
+  /* position: fixed; */
+  width: 100%;
+  color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
 }
 
 .navbar {
@@ -37,29 +65,6 @@ h3 {
   z-index: 1;
 }
 
-.nav-branding {
-  font-size: 2rem;
-  transition: 0.2s ease;
-}
-
-/* Menu css */
-header {
-  background-color: white;
-  /* SKAL GØRES SENERE SÃ… MENUEN FØLGER MED */
-  /* position: fixed; */
-  width: 100%;
-  color: #262626;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -67,14 +72,13 @@ a {
   gap: 60px;
 }
 
-.ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+.nav-branding {
+  font-size: 2rem;
+  transition: 0.2s ease;
+}
+
+.nav-branding:hover {
+  color: green;
 }
 
 .navn {
@@ -108,34 +112,81 @@ a {
   grid-column: 2;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1440px) {
-  .headline {
-    font-size: 20rem;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .headline {
-    font-size: 15rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .headline {
-    font-size: 10rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 480px) {
   .headline {
     font-size: 7rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
   .headline {
-    font-size: 7rem;
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .headline {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .headline {
+    font-size: 17rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 22px 29px -33px black;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
   }
 }
