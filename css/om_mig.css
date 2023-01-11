@@ -1,0 +1,126 @@
+.om_mig {
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+p {
+  margin: 20px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: mr-eaves-sans, sans-serif;
+}
+
+.content_cv {
+  margin-top: 5px;
+}
+.navn2 {
+  font-weight: bold;
+  color: rgb(255, 132, 0);
+}
+.alder {
+  color: rgb(255, 132, 0);
+}
+
+@media (min-width: 900px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+
+  .col2 {
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+  .portræt {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    box-shadow: inset 0px 0px 12px -5px black;
+    border-radius: 10%;
+  }
+  .box {
+    position: absolute;
+    color: white;
+  }
+  .navn2 {
+    font-size: 1.5rem;
+  }
+
+  .alder {
+    font-size: 0.8rem;
+  }
+
+  .col3 {
+    margin: 30px 30px;
+  }
+
+  .box2 {
+    margin: 30px;
+    margin-top: 10px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .cv {
+    text-align: right;
+  }
+
+  .arbejdspladser {
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 50px;
+  }
+
+  .uddannelse {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .orange {
+    background-color: rgb(255, 132, 0);
+    position: absolute;
+    height: 135px;
+    width: 950px;
+    color: white;
+    margin-left: -370px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col2 {
+    font-size: 1.5rem;
+  }
+  .navn2 {
+    font-size: 2rem;
+  }
+
+  .alder {
+    font-size: 1rem;
+  }
+
+  .orange {
+    margin-left: -200px;
+  }
+}
+
+@media (max-width: 899px) {
+  .portræt {
+    padding-right: 50px;
+    width: 100%;
+    height: auto;
+  }
+  .col2 {
+    padding-right: 30px;
+  }
+}

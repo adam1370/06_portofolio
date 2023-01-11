@@ -1,6 +1,12 @@
+.hide {
+  display: none;
+}
+
 main {
   margin-top: 120px;
+  margin-bottom: 120px;
   margin-left: 150px;
+  margin-right: 120px;
 }
 button {
   background-color: green;
@@ -15,6 +21,12 @@ button {
 button:hover {
   box-shadow: black 0px 0px 9px -2px;
   font-size: 1rem;
+}
+
+.line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.447);
+  display: block;
+  margin: 70px auto;
 }
 
 .img_port {

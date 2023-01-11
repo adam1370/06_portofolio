@@ -7,7 +7,7 @@
 
 h1 {
   font-family: mr-eaves-sans, sans-serif;
-  font-weight: 500px;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-  color: green;
+  color: rgb(255, 132, 0);
 }
 
 .navbar {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .nav-branding:hover {
-  color: green;
+  color: rgb(255, 132, 0);
 }
 
 .navn {
